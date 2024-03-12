@@ -4,7 +4,7 @@ pipeline {
     }
 
     environment {
-        APP_NAME = "complete-prodcution-e2e-pipeline"
+        APP_NAME = "java-web-application"
     }
 
     stages {
