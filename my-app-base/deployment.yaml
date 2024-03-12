@@ -1,19 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: complete-prodcution-e2e-deployment
+  name: java-web-app-deployment
 spec:
+  replicas: 2
   selector:
     matchLabels:
-      app: complete-prodcution-e2e-app
+      app: java-web-app
   template:
     metadata:
       labels:
-        app: complete-prodcution-e2e-app
+        app: java-web-app
     spec:
       containers:
-        - name: complete-prodcution-e2e-app
-          image: dmancloud/complete-prodcution-e2e-github-actions
+        - name: java-web-app
+          image: elliegwon/java-web-application:1.0.0-null
           resources:
             limits:
               memory: "256Mi"
