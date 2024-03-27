@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: java-web-app
-          image: elliegwon/java-web-application:1.0.0-26
+          image: elliegwon/java-web-application:1.0.0-27
           resources:
             limits:
               memory: "256Mi"
